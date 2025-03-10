@@ -1,5 +1,6 @@
 To create:
 kubectl create ns efk
+kubectl rollout restart deployment coredns -n kube-system (Sometimes error comes related to DNS to avoid error we use this command)
 kubectl create -f .
 
 To verify:
